@@ -1,0 +1,7 @@
+set vlans PORTMIRROR-MONITOR0 description "A VLAN for remote monitoring of switch interface traffic"
+set vlans PORTMIRROR-MONITOR0 vlan-id 100
+set forwarding-options storm-control-profiles default all
+set forwarding-options analyzer test input ingress interface ge-0/0/1.0
+set forwarding-options analyzer test input egress interface ge-0/0/1.0
+set forwarding-options analyzer test output vlan PORTMIRROR-MONITOR0
+set interface ae0.0 family ethernet-switching vlan members PORTMIRROR-MONITOR0
