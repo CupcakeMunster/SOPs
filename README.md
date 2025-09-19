@@ -1,5 +1,5 @@
 # SOPs
-Juniper switches can be configured to send all captured traffic from a port analyzer (mirror) to a remote VLAN. This is helpful for when a technician is troublshooting remotely but still needs to evaluate a raw packet capture. Since Junipers built in tcpdump tool can only show packets destined to the routing engine itself, this method is a good solution for obtaining complete visability of network traffic.
+Juniper switches can be configured to send all captured traffic from a port analyzer (mirror) to a remote VLAN. This is helpful for when a technician is troubleshooting remotely but still needs to evaluate a raw packet capture. Since Junipers built in tcpdump tool can only show packets destined to the routing engine itself, this method is a good solution for obtaining complete visibility of network traffic. 
 
 ## Capturing Switch Setup
 First, we create a VLAN to use as an isolated network for packet captures.
